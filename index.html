@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Mousa - .NET Developer</title>
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <i class="fas fa-code"></i>
+                <span>MS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="matrix-bg">
+            <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-wrapper">
+                    <div class="profile-image">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEWYrIO1c5vJQ/profile-displayphoto-shrink_800_800/B56ZSVPYY5HsAg-/0/1737670626214?e=1744243200&v=beta&t=Lb63Yg9oKOJvfdqkTxdGNOHBN2aAnIzre-TBhKrGw-E" alt="Mina Mousa">
+                    </div>
+                </div>
+                <h1 class="typing-text name" data-text="Mina Mousa">Mina Mousa</h1>
+                <p class="typing-text subtitle" data-text=".NET Developer | Building Scalable Web Solutions">.NET Developer | Building Scalable Web Solutions</p>
+                <div class="social-links delayed">
+                    <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:minamousasamy@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="cta-buttons delayed">
+                    <a href="#contact" class="btn primary glitch" data-text="Get in Touch">Get in Touch</a>
+                    <a href="#projects" class="btn secondary glitch" data-text="View Projects">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am a passionate .NET Developer with experience in building scalable web applications. My journey in software development started with a deep curiosity for creating efficient solutions to complex problems.</p>
+                <p>I specialize in C#, ASP.NET Core, and modern web technologies. I'm always eager to learn new technologies and improve my skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="devicon-csharp-plain"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-dotnetcore-plain"></i>
+                            <span>.NET Core</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & DevOps -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-azure"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2>Professional Journey</h2>
+            <div class="experience-grid">
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Jr. Business Application Developer</h3>
+                        <p>Misr Technology Services • 2022 - Present</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Led the optimization of the Nafeza system, improving system uptime by 25%</li>
+                            <li>Developed and optimized RESTful APIs, reducing response time by 15%</li>
+                            <li>Implemented real-time analytics and reporting modules</li>
+                            <li>Enhanced application security through role-based access control</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span><i class="devicon-csharp-plain"></i> C#</span>
+                            <span><i class="devicon-dotnetcore-plain"></i> .NET Core</span>
+                            <span><i class="fas fa-database"></i> SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Jr. .NET Developer</h3>
+                        <p>Emax IT • 2021 - 2022</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Developed key modules for a multi-module ERP system</li>
+                            <li>Created intuitive user interfaces for better UX</li>
+                            <li>Implemented database optimizations</li>
+                            <li>Added multi-language support for international markets</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span><i class="devicon-csharp-plain"></i> C#</span>
+                            <span><i class="devicon-dot-net-plain"></i> ASP.NET</span>
+                            <span><i class="fas fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Nafeza System</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>A comprehensive customs management system that improved efficiency and reduced processing time.</p>
+                        <div class="project-tech">
+                            <span><i class="devicon-csharp-plain"></i> C#</span>
+                            <span><i class="devicon-dotnetcore-plain"></i> .NET Core</span>
+                            <span><i class="fas fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>ERP System</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Enterprise resource planning system serving 200+ users with multi-language support.</p>
+                        <div class="project-tech">
+                            <span><i class="devicon-csharp-plain"></i> C#</span>
+                            <span><i class="devicon-dot-net-plain"></i> ASP.NET</span>
+                            <span><i class="fas fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:minamousasamy@gmail.com">minamousasamy@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Heliopolis, Cairo</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com" target="_blank">GitHub Profile</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mina Mousa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="script.js"></script>
+</body>
+</html>
